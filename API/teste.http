@@ -1,0 +1,27 @@
+### testando a raiz do projeto
+GET http://localhost:5187 
+
+### Listar alunos
+GET http://localhost:5187/api/aluno/listar
+
+### Cadastrar aluno
+POST http://localhost:5187/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "Julia",
+    "Sobrenome": "Souza"
+}
+
+### Listar imcs
+GET http://localhost:5187/api/imc/listar
+
+### Cadastrar imc
+POST http://localhost:5187/api/imc/cadastrar
+Content-Type: application/json
+
+{
+    "Altura": "1,70",
+    "Peso": "65",
+    "Nome": "Julia"
+}
