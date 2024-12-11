@@ -63,28 +63,7 @@ app.MapPost("api/imc/cadastrar", ([FromServices] AppDataContext ctx, [FromBody] 
 }); 
 
 
-/*app.MapPut("api/imc/alterar/{Nome}", ([FromServices] AppDataContext ctx, [FromRoute] string Nome) =>
-{
-  
-    Imc? imc = ctx.Imcs.Find(Nome);
-    if (imc is null)
-    {
-        return Results.NotFound("Aluno não encontrado");
-    }
 
-    if (imc.Status == "Não iniciada")
-    {
-        tarefa.Status = "Em andamento";
-    }
-    else if (tarefa.Status == "Em andamento")
-    {
-        tarefa.Status = "Concluída";
-    }
-
-    ctx.Tarefas.Update(tarefa);
-    ctx.SaveChanges();
-    return Results.Ok(ctx.Tarefas.ToList());
-}); */
 
 
 
